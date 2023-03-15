@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="body_main">
+<!-- search_box -->
+   <div class="search_popup">
+         <div class="search_1" id="search_1_id" >
+               <div class="upper1" id="upper_1_id">
+                    <div class="placeholder"><input type="search" placeholder="Search" ></div>
+                    <div class="upper1_icon"><ion-icon name="search-outline"></ion-icon></div>
+               </div>
+               <div class="lower1" id="lower1_id">
+                    <div>
+                       <button>Action</button>
+                       <button>Drama</button>
+                       <button>Horror</button>
+                       <button>Comedy</button>
+                       <button>Fantasy</button>
+                       <button>Mystery</button>
+                    </div>    
+                    <div>
+                       <button>Romance</button>
+                       <button>Thriller</button>
+                       <button>Western</button>
+                       <button>Crime</button>
+                    </div>    
+                    <div>
+                       <button>Disaster</button>
+                       <button>Techno</button>
+                    </div>    
+                    <div>
+                       <button>Sci-Fi</button>
+                    </div>    
+               </div>
+          </div>
+   </div>
+
+<!-- header_menu -->
+    <header class="header">
+        <nav class="nav" id="nav1"> 
+          <div class="top">
+               <span><icon class="icon"><ion-icon name="logo-apple-ar"class="ion"></ion-icon></icon></span>
+               <span><a href='#'>Praveen Movies</a></span>
+          </div>
+          <div class="bottom">
+               <ul>
+               <li id="search_button"><icon class="icon"><ion-icon name="search-outline"></ion-icon></icon><a>Search</a></li>
+               <li id="home_id"><icon class="icon"><ion-icon name="home-outline"></ion-icon></icon><a href='#'>Home</a></li>
+               <li><icon class="icon"><ion-icon name="calendar-outline"></ion-icon></icon><a href='#'>Latest</a></li>
+               <li><icon class="icon"><ion-icon name="albums-outline"></ion-icon></icon><a href='#'>Albums</a></li>
+               <li><icon class="icon"><ion-icon name="videocam-outline"></ion-icon></icon><a href='#'>Movies</a></li>     
+               <li onclick="onClickMenu1()" class="exit"><icon class="icon"><ion-icon name="exit-outline"></ion-icon></icon><a>Exit</a></li>     
+               </ul>
+          </div>
+        </nav>
+    </header>
+
+<!-- overall_content-->
+<main class="body_main2" id="body_main2_id">
+
+  <!-- section_pic -->
+
+    <section class='section' id="section_id">
+        <div class='container' >
+            <div class="menu_logo" id='menu_logo1' onclick="onClickMenu()">
+                <div class='box' id='box1'></div>
+                <div class='box' id='box2'></div>
+                <div class='box' id='box3'></div>
+            </div>
+
+            <div class='search_box'>
+                <span><input types="text" placeholder='Search' id="input_id"/></span>
+                <span class="search_icon" id="search_button_id"><ion-icon class='icon' name="search-outline"></ion-icon></span>
+            </div>
+            <div class="search_container"  >
+                <div>
+                    <button id="close_id">close</button>
+                </div>
+                <div id="search_container_id">
+
+                </div>
+            </div>
+
+            <div class='client_logo'>
+                <a href="#"><img src="Logo/netflix-logo-png-2616.png" alt="#"></a>
+            </div>
+        </div>
+    </section>
+
+  <!-- poster -->
+    
+   <section class="section1" >
+        <div class="container1">
+           <div class="poster_img1" id="poster_img1_id"></div>
+        </div>
+   </section>
+
+  <!-- details --> 
+
+   <section class="section2" id="section2_id">
+        <div class="container2" id="container2_id">
+        </div>   
+   </section>
+  
+  <!-- movies poster -->
+    
+   <section class="section3">
+
+        <div class="container3">
+
+        <div class="movies-section">    
+            <div class="images-box" id="image-box-id">
+                <div class="number">1</div>
+                <div class="movie2">
+                    <div class="movie_img"><img src="posters/movies-poster-1.jpg" alt="Wait for network"></div>
+                    <div class="overlay">
+                        <p>action movie <br> this very hard movie</p>
+                    </div>
+                </div>     
+                <div class="number">2</div>
+                <div class="movie2">
+                    <div class="movie_img"><img src="posters/Kick-movie-poster-free-download.jpg" alt="Wait for network"></div>
+                    <div class="overlay">
+                        <p>action movie <br> this very hard movie</p>
+                    </div>
+                </div>     
+                <div class="number">3</div>
+                <div class="movie2">
+                    <div class="movie_img"><img src="posters/movies-poster-18.jpg" alt="Wait for network"></div>
+                    <div class="overlay">
+                        <p>action movie <br> this very hard movie</p>
+                    </div>
+                </div>     
+                <div class="number">4</div>
+                <div class="movie2">
+                    <div class="movie_img"><img src="posters/movies-poster-21.jpg" alt="Wait for network"></div>
+                    <div class="overlay">
+                        <p>action movie <br> this very hard movie</p>
+                    </div>
+                </div>     
+                <div class="number">5</div>
+                <div class="movie2">
+                    <div class="movie_img"><img src="posters/movies-poster-29.jpg" alt="Wait for network"></div>
+                    <div class="overlay">
+                        <p>action movie <br> this very hard movie</p>
+                    </div>
+                </div>     
+            </div>
+        </div>    
+        <div class="movies-section">
+            <div class="poster">
+               <h1>Papular In Action</h1>
+            </div>
+            <div class="images-box">
+                <div class="movie">
+                    <div class="movie_img"><img src="posters/movies-poster-1.jpg" alt="Wait for network"></div>
+                    <div class="overlay">
+                        <div><ion-icon name="heart-circle-sharp"  class="overlay_button"></ion-icon></ion-icon></div>
+                        <div>
+                            <div class="overlay_p"><p>Action movie</p></div>
+                            <div class="overlay_bu"><div class="overlay_button_play"><ion-icon name="play-outline" class="overlay_icon"></ion-icon><a href="">Play</a></div></div>
+                        </div>    
+                    </div>
+                </div>          
+                <div class="movie">
+                    <div class="movie_img"><img src="posters/movies-poster-10.jpg" alt=""></div>
+                    <div class="overlay">
+                        <div><ion-icon name="heart-circle-sharp"  class="overlay_button"></ion-icon></ion-icon></div>
+                        <div>
+                            <div class="overlay_p"><p>Action movie</p></div>
+                            <div class="overlay_bu"><div class="overlay_button_play"><ion-icon name="play-outline" class="overlay_icon"></ion-icon><a href="">Play</a></div></div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie_img"><img src="posters/movies-poster-13.jpg" alt=""></div>
+                    <div class="overlay">
+                        <div><ion-icon name="heart-circle-sharp"  class="overlay_button"></ion-icon></ion-icon></div>
+                        <div>
+                            <div class="overlay_p"><p>Action movie</p></div>
+                            <div class="overlay_bu"><div class="overlay_button_play"><ion-icon name="play-outline" class="overlay_icon"></ion-icon><a href="">Play</a></div></div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie_img"><img src="posters/movies-poster-15.jpg" alt=""></div>
+                    <div class="overlay">
+                        <div><ion-icon name="heart-circle-sharp"  class="overlay_button"></ion-icon></ion-icon></div>
+                        <div>
+                            <div class="overlay_p"><p>Action movie</p></div>
+                            <div class="overlay_bu"><div class="overlay_button_play"><ion-icon name="play-outline" class="overlay_icon"></ion-icon><a href="">Play</a></div></div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie_img"><img src="posters/movies-poster-18.jpg" alt=""></div> 
+                    <div class="overlay">
+                        <div><ion-icon name="heart-circle-sharp"  class="overlay_button"></ion-icon></ion-icon></div>
+                        <div>
+                            <div class="overlay_p"><p>Action movie</p></div>
+                            <div class="overlay_bu"><div class="overlay_button_play"><ion-icon name="play-outline" class="overlay_icon"></ion-icon><a href="">Play</a></div></div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie_img"><img src="posters/movies-poster-2.jpg" alt=""></div>
+                    <div class="overlay">
+                        <div><ion-icon name="heart-circle-sharp"  class="overlay_button"></ion-icon></ion-icon></div>
+                        <div>
+                            <div class="overlay_p"><p>Action movie</p></div>
+                            <div class="overlay_bu"><div class="overlay_button_play"><ion-icon name="play-outline" class="overlay_icon"></ion-icon><a href="">Play</a></div></div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie_img"><img src="posters/movies-poster-20.jpg" alt=""></div>
+                    <div class="overlay">
+                        <div><ion-icon name="heart-circle-sharp"  class="overlay_button"></ion-icon></ion-icon></div>
+                        <div>
+                            <div class="overlay_p"><p>Action movie</p></div>
+                            <div class="overlay_bu"><div class="overlay_button_play"><ion-icon name="play-outline" class="overlay_icon"></ion-icon><a href="">Play</a></div></div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="container3" id="movies-container">
+        </div>
+
+   </section>
+
+  <!-- movies-cards -->
+
+   <section class="section4">
+        <div class="container4" id="container4_id">
+        </div>
+   </section>
+
+</main>
+</div>
+<!-- this is script -->
+<script src="index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
